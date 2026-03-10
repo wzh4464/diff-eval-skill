@@ -15,7 +15,9 @@ A Claude Code skill for evaluating agent-generated code changes against human-ap
 ## Install
 
 ```bash
-claude skill add --from https://github.com/wzh4464/diff-eval-skill
+git clone https://github.com/wzh4464/diff-eval-skill.git /tmp/diff-eval-skill
+cp -r /tmp/diff-eval-skill/diff-eval ~/.claude/skills/diff-eval
+rm -rf /tmp/diff-eval-skill
 ```
 
 Or manually copy the `diff-eval/` directory to `~/.claude/skills/`.
